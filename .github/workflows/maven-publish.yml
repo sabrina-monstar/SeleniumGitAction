@@ -19,15 +19,7 @@ jobs:
         java-version: 1.8
     - name: Install Google Chrome # Using shell script to install Google Chrome
       run: |
-       chmod +x ./scripts/InstallChrome.sh
-        ./scripts/InstallChrome.sh
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+       chmod +x InstallChrome.sh
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-    - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
