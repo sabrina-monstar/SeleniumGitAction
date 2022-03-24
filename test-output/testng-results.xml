@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-24T19:06:27 BDT" name="Default suite" finished-at="2022-03-24T19:06:58 BDT" duration-ms="30568">
+    <groups>
+    </groups>
+    <test started-at="2022-03-24T19:06:27 BDT" name="Default test" finished-at="2022-03-24T19:06:58 BDT" duration-ms="30568">
+      <class name="test.SeleniumDemo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.SeleniumDemo@568ff82]" started-at="2022-03-24T19:06:27 BDT" name="setUp" finished-at="2022-03-24T19:06:58 BDT" duration-ms="30544" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: was killed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Sabrinas-MacBook-Air.local', ip: 'fe80:0:0:0:1440:cbbf:5019:b1d3%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.0.1', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000100dd8159 chromedriver + 5120345
+1   chromedriver                        0x0000000100d65b13 chromedriver + 4651795
+2   chromedriver                        0x0000000100955e68 chromedriver + 392808
+3   chromedriver                        0x00000001009788ed chromedriver + 534765
+4   chromedriver                        0x00000001009746ed chromedriver + 517869
+5   chromedriver                        0x00000001009ae825 chromedriver + 755749
+6   chromedriver                        0x00000001009a8a33 chromedriver + 731699
+7   chromedriver                        0x000000010097e5dd chromedriver + 558557
+8   chromedriver                        0x000000010097f4f5 chromedriver + 562421
+9   chromedriver                        0x0000000100d9538d chromedriver + 4846477
+10  chromedriver                        0x0000000100daf21c chromedriver + 4952604
+11  chromedriver                        0x0000000100db4a12 chromedriver + 4975122
+12  chromedriver                        0x0000000100dafb4a chromedriver + 4954954
+13  chromedriver                        0x0000000100d8a5b0 chromedriver + 4801968
+14  chromedriver                        0x0000000100dc9f78 chromedriver + 5062520
+15  chromedriver                        0x0000000100dca0ff chromedriver + 5062911
+16  chromedriver                        0x0000000100ddf545 chromedriver + 5150021
+17  libsystem_pthread.dylib             0x00007ff809bf5514 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff809bf102f thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Sabrinas-MacBook-Air.local', ip: 'fe80:0:0:0:1440:cbbf:5019:b1d3%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.0.1', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000100dd8159 chromedriver + 5120345
+1   chromedriver                        0x0000000100d65b13 chromedriver + 4651795
+2   chromedriver                        0x0000000100955e68 chromedriver + 392808
+3   chromedriver                        0x00000001009788ed chromedriver + 534765
+4   chromedriver                        0x00000001009746ed chromedriver + 517869
+5   chromedriver                        0x00000001009ae825 chromedriver + 755749
+6   chromedriver                        0x00000001009a8a33 chromedriver + 731699
+7   chromedriver                        0x000000010097e5dd chromedriver + 558557
+8   chromedriver                        0x000000010097f4f5 chromedriver + 562421
+9   chromedriver                        0x0000000100d9538d chromedriver + 4846477
+10  chromedriver                        0x0000000100daf21c chromedriver + 4952604
+11  chromedriver                        0x0000000100db4a12 chromedriver + 4975122
+12  chromedriver                        0x0000000100dafb4a chromedriver + 4954954
+13  chromedriver                        0x0000000100d8a5b0 chromedriver + 4801968
+14  chromedriver                        0x0000000100dc9f78 chromedriver + 5062520
+15  chromedriver                        0x0000000100dca0ff chromedriver + 5062911
+16  chromedriver                        0x0000000100ddf545 chromedriver + 5150021
+17  libsystem_pthread.dylib             0x00007ff809bf5514 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff809bf102f thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at test.SeleniumDemo.setUp(SeleniumDemo.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLogin()[pri:0, instance:test.SeleniumDemo@568ff82]" started-at="2022-03-24T19:06:58 BDT" name="userLogin" finished-at="2022-03-24T19:06:58 BDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: was killed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Sabrinas-MacBook-Air.local', ip: 'fe80:0:0:0:1440:cbbf:5019:b1d3%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.0.1', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000100dd8159 chromedriver + 5120345
+1   chromedriver                        0x0000000100d65b13 chromedriver + 4651795
+2   chromedriver                        0x0000000100955e68 chromedriver + 392808
+3   chromedriver                        0x00000001009788ed chromedriver + 534765
+4   chromedriver                        0x00000001009746ed chromedriver + 517869
+5   chromedriver                        0x00000001009ae825 chromedriver + 755749
+6   chromedriver                        0x00000001009a8a33 chromedriver + 731699
+7   chromedriver                        0x000000010097e5dd chromedriver + 558557
+8   chromedriver                        0x000000010097f4f5 chromedriver + 562421
+9   chromedriver                        0x0000000100d9538d chromedriver + 4846477
+10  chromedriver                        0x0000000100daf21c chromedriver + 4952604
+11  chromedriver                        0x0000000100db4a12 chromedriver + 4975122
+12  chromedriver                        0x0000000100dafb4a chromedriver + 4954954
+13  chromedriver                        0x0000000100d8a5b0 chromedriver + 4801968
+14  chromedriver                        0x0000000100dc9f78 chromedriver + 5062520
+15  chromedriver                        0x0000000100dca0ff chromedriver + 5062911
+16  chromedriver                        0x0000000100ddf545 chromedriver + 5150021
+17  libsystem_pthread.dylib             0x00007ff809bf5514 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff809bf102f thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Sabrinas-MacBook-Air.local', ip: 'fe80:0:0:0:1440:cbbf:5019:b1d3%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.0.1', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000100dd8159 chromedriver + 5120345
+1   chromedriver                        0x0000000100d65b13 chromedriver + 4651795
+2   chromedriver                        0x0000000100955e68 chromedriver + 392808
+3   chromedriver                        0x00000001009788ed chromedriver + 534765
+4   chromedriver                        0x00000001009746ed chromedriver + 517869
+5   chromedriver                        0x00000001009ae825 chromedriver + 755749
+6   chromedriver                        0x00000001009a8a33 chromedriver + 731699
+7   chromedriver                        0x000000010097e5dd chromedriver + 558557
+8   chromedriver                        0x000000010097f4f5 chromedriver + 562421
+9   chromedriver                        0x0000000100d9538d chromedriver + 4846477
+10  chromedriver                        0x0000000100daf21c chromedriver + 4952604
+11  chromedriver                        0x0000000100db4a12 chromedriver + 4975122
+12  chromedriver                        0x0000000100dafb4a chromedriver + 4954954
+13  chromedriver                        0x0000000100d8a5b0 chromedriver + 4801968
+14  chromedriver                        0x0000000100dc9f78 chromedriver + 5062520
+15  chromedriver                        0x0000000100dca0ff chromedriver + 5062911
+16  chromedriver                        0x0000000100ddf545 chromedriver + 5150021
+17  libsystem_pthread.dylib             0x00007ff809bf5514 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff809bf102f thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at test.SeleniumDemo.setUp(SeleniumDemo.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.SeleniumDemo@568ff82]" started-at="2022-03-24T19:06:58 BDT" name="tearDown" finished-at="1970-01-01T06:00:00 BDT" duration-ms="-1648127218089" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.SeleniumDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
