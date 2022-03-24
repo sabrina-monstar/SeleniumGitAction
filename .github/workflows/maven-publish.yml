@@ -3,17 +3,13 @@
 
 name: Maven Package
 
-on:
-  release:
-    types: [created]
+on: [push]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+    
 
     steps:
     - uses: actions/checkout@v2 # Checkout the code
