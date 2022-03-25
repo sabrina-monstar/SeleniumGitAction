@@ -8,10 +8,3 @@ on:
 jobs:
   singleJobName:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ env.DELAYED_JOB_CHECKOUT_REF }} # SHA that triggered your original job 
-
-      - name: Do some work
-        run: echo $GITHUB_SHA
