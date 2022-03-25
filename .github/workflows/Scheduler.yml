@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Scheduler
+name: Scheduler Cron Job
 on:
   schedule:
     - cron:  '*/1 * * * *'    # At every 1 minute
