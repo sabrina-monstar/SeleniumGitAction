@@ -5,7 +5,6 @@ on:
   schedule:
     - cron:  '*/1 * * * *'    # At every 1 minute
   
-
 jobs:
   singleJobName:
     runs-on: ubuntu-latest
