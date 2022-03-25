@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-     - cron: '*/5 * * * *'   # At every 5 minute
+     - cron: '*/15 * * * *'   # At every 15 minute
      
 jobs:
   build:
