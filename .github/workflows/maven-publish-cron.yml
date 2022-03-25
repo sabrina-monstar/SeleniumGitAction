@@ -3,7 +3,9 @@
 
 name: Maven Package
 
-on: [push]
+on:
+  schedule:
+    - cron:  '*/1 * * * *'    # At every 15th minute
 
 jobs:
   build:
