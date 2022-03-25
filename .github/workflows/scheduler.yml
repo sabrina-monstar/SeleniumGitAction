@@ -5,7 +5,7 @@ name: Run periodically.
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/15 * * * *' #asd
 
 jobs:
   build:
