@@ -15,7 +15,6 @@ jobs:
 
     runs-on: ubuntu-latest
     
-
     steps:
     - uses: actions/checkout@v2 # Checkout the code
     - name: Set up JDK 1.8
