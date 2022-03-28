@@ -5,7 +5,7 @@ name: Maven Package
 
 on:
   schedule:
-     - cron: '*/15 * * * *'   # At every 15 minute
+#      - cron: '*/15 * * * *'   # At every 15 minute
      
 jobs:
   build:
