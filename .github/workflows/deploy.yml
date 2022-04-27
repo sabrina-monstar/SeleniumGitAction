@@ -5,8 +5,8 @@ on:
     branches:
       - main
 jobs:
-  build:
-    name: Run API
+  Workflow-Dispatch-Test:
+  
     runs-on: ubuntu-latest #1
     steps:
       - name: Build API
