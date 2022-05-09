@@ -4,8 +4,11 @@
 name: Run periodically
 
 on:
-  schedule:
-     - cron: '*/15 * * * *'   
+  push:
+    branches: [ main ]
+    
+#   schedule:
+#      - cron: '*/15 * * * *'   
      
 jobs:
   build:
