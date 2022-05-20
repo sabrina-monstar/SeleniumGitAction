@@ -1,0 +1,23 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Job 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Web App #1
+        run: |
+          echo "Build Web App"
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: soheldef123
+          repo: selenium
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          workflow_file_name: dispatch.yml #4
+      - name: Deploy Web App new
+        run: |
+          echo "Deploy Web App"
+          
