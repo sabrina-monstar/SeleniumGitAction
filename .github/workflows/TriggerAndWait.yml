@@ -1,4 +1,4 @@
-name: TriggerAndWait Test
+name: TriggerAndWait
 
 on:
   push:
