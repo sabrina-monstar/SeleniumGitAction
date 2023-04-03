@@ -20,7 +20,7 @@ jobs:
       uses: convictional/trigger-workflow-and-wait@v1.3.0
       with:
         owner: itssabrina
-        repo: selenium
+        repo: RepoTrigger
         github_token: ${{ secrets.REPO_TOKEN }}
         workflow_file_name: trigger.yml
   
