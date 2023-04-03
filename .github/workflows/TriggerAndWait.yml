@@ -15,35 +15,12 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml 
-    - name: Trigger the QA Workflow from selenium Repo
-      run: |
-          echo "Trigger and wait"     
+      
     - name: Trigger sabrina's repo
       uses: convictional/trigger-workflow-and-wait@v1.3.0
       with:
         owner: itssabrina
-        repo: RepoTrigger
+        repo: selenium
         github_token: ${{ secrets.REPO_TOKEN }}
         workflow_file_name: trigger.yml
-    - name: QA YML workflow Trigger done
-      run: |
-          echo "Trigger Done"    
-        
-      
-  job2:
-    runs-on: ubuntu-latest
-    needs: job1
-    steps:
-    - name: Trigger the selenium-workflow from the selenium repo
-      run: |
-          echo "Trigger and wait"      
-    - name: Trigger itssabrina repo
-      uses: convictional/trigger-workflow-and-wait@v1.3.0
-      with:
-        owner: itssabrina
-        repo: RepoTrigger
-        github_token: ${{ secrets.REPO_TOKEN }}
-        workflow_file_name: trigger.yml
-    - name: Selenium YML Workflow Trigger done
-      run: |
-          echo "Trigger Done"      
+  
